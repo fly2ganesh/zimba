@@ -5,6 +5,7 @@ export default class dhangarGrooms extends RestClient {
         // Initialize with your base URL
         super('http://fe2759d8ed9d.ngrok.io');
     }
+    
     // Now you can write your own methods easily
     //   login (username, password) {
     //     // Returns a Promise with the response.
