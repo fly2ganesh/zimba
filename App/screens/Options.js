@@ -23,13 +23,12 @@ export default () => {
 
       <ScrollView>
         <RowItem
-          title="Themes"
+          title="Themesss"
           onPress={() => alert("todo!")}
           rightIcon={
             <Entypo name="chevron-right" size={20} color={colors.blue} />
           }
         />
-
         <RowSeparator />
 
         <RowItem

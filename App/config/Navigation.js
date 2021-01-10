@@ -8,16 +8,19 @@ import Home from "../screens/Home";
 import Options from "../screens/Options";
 import CurrencyList from "../screens/CurrencyList";
 import colors from "../constants/colors";
+import Profiles from "../screens/Profiles";
+import Profile from "../screens/Profile";
 
 const MainStack = createStackNavigator();
 const MainStackScreen = () => (
   <MainStack.Navigator>
     <MainStack.Screen
-      name="Home"
-      component={Home}
-      options={{ headerShown: false }}
+      name="Profiles"
+      component={Profiles}
+      options={{ headerShown: true }}
     />
     <MainStack.Screen name="Options" component={Options} />
+    {/* <MainStack.Screen name="Profiles" component={Profiles} /> */}
   </MainStack.Navigator>
 );
 
@@ -45,6 +48,8 @@ const ModalStackScreen = () => (
         )
       })}
     />
+
+    <MainStack.Screen name="Profiles" component={Profiles} />
   </ModalStack.Navigator>
 );
 
